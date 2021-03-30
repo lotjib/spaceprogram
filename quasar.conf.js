@@ -56,7 +56,7 @@ module.exports = function (/* ctx */) {
       showProgress: true,
       // gzip: true,
       // analyze: true,
-      publicPath: '<protocol>://<domain>/spaceprogram',
+      publicPath: '/spaceprogram',
       // Options below are automatically set depending on the env, set them if you want to override
       // extractCSS: false,
 
