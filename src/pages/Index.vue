@@ -21,7 +21,7 @@ export default {
   },
   methods:{
   	getStats(){
-  		axios.get('http://server.siberiaserver.tk/api/model/Stat/getAll').then(res => {
+  		this.$axios.get('http://server.siberiaserver.tk/api/model/Stat/getAll').then(res => {
   			this.stats = res.data;
   		});
   	}
