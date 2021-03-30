@@ -17,13 +17,15 @@ export default {
   },
   mounted(){
   	this.getStats();
-  	console.log();
   },
   methods:{
   	getStats(){
-  		this.$axios.get('http://server.siberiaserver.tk/api/model/Stat/getAll').then(res => {
+  		this.$axios.get('https://server.siberiaserver.tk/api/model/Stat/getAll').then(res => {
   			this.stats = res.data;
-  		});
+  		}).then(msg => {
+        console.log(this.stats);
+      });
+
   	}
   },
 }
